@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://atlasintelligencesas.com/kimeru/sitemap.xml

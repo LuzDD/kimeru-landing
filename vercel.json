@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/kimeru/(.*)", "destination": "/index.html" }
+  ]
+}
