@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 431.61 433.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c93d1a;
+      }
+
+      .cls-2 {
+        fill: #cd441b;
+      }
+
+      .cls-3 {
+        fill: #e2631e;
+      }
+
+      .cls-4 {
+        fill: #d44d1c;
+      }
+
+      .cls-5 {
+        fill: #cc401a;
+      }
+
+      .cls-6 {
+        fill: #c53719;
+      }
+
+      .cls-7 {
+        fill: #e1611e;
+      }
+
+      .cls-8 {
+        fill: #d0471b;
+      }
+
+      .cls-9 {
+        fill: #c43519;
+      }
+
+      .cls-10 {
+        fill: #ca3e1a;
+      }
+
+      .cls-11 {
+        fill: #fcc10f;
+      }
+
+      .cls-12 {
+        fill: #e96d1f;
+      }
+
+      .cls-13 {
+        fill: #e1621e;
+      }
+
+      .cls-14 {
+        fill: #dd5b1e;
+      }
+
+      .cls-15 {
+        fill: #d1491b;
+      }
+
+      .cls-16 {
+        fill: #cd421a;
+      }
+
+      .cls-17 {
+        fill: #c83b1a;
+      }
+
+      .cls-18 {
+        fill: #e5661f;
+      }
+
+      .cls-19 {
+        fill: #df5f1e;
+      }
+
+      .cls-20 {
+        fill: #e86c1f;
+      }
+
+      .cls-21 {
+        fill: #de5d1e;
+      }
+
+      .cls-22 {
+        fill: #da571d;
+      }
+
+      .cls-23 {
+        fill: #c93c1a;
+      }
+
+      .cls-24 {
+        fill: #e3641e;
+      }
+
+      .cls-25 {
+        fill: none;
+      }
+
+      .cls-26 {
+        fill: #cb3f1a;
+      }
+
+      .cls-27 {
+        fill: #d24b1c;
+      }
+
+      .cls-28 {
+        fill: #ec721f;
+      }
+
+      .cls-29 {
+        fill: #dc591d;
+      }
+
+      .cls-30 {
+        fill: #e6681f;
+      }
+
+      .cls-31 {
+        fill: #d9561d;
+      }
+
+      .cls-32 {
+        fill: #e66a1f;
+      }
+
+      .cls-33 {
+        fill: #d7521c;
+      }
+
+      .cls-34 {
+        fill: #d8541d;
+      }
+
+      .cls-35 {
+        fill: #ec731f;
+      }
+
+      .cls-36 {
+        fill: #d24a1b;
+      }
+
+      .cls-37 {
+        fill: #eb711f;
+      }
+
+      .cls-38 {
+        fill: #d54f1c;
+      }
+
+      .cls-39 {
+        fill: #d8531d;
+      }
+
+      .cls-40 {
+        fill: #df5e1e;
+      }
+
+      .cls-41 {
+        fill: #c73919;
+      }
+
+      .cls-42 {
+        fill: #d6511c;
+      }
+
+      .cls-43 {
+        fill: #d9551d;
+      }
+
+      .cls-44 {
+        fill: #ed741f;
+      }
+
+      .cls-45 {
+        fill: #db581d;
+      }
+
+      .cls-46 {
+        fill: #e5681f;
+      }
+
+      .cls-47 {
+        fill: #e4651f;
+      }
+
+      .cls-48 {
+        fill: #ea6f1f;
+      }
+
+      .cls-49 {
+        fill: #ed751f;
+      }
+
+      .cls-50 {
+        fill: #d34c1c;
+      }
+
+      .cls-51 {
+        fill: #ce451b;
+      }
+
+      .cls-52 {
+        fill: #e76b1f;
+      }
+
+      .cls-53 {
+        fill: #c63819;
+      }
+
+      .cls-54 {
+        fill: #d54e1c;
+      }
+
+      .cls-55 {
+        fill: #ea6e1f;
+      }
+
+      .cls-56 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-57 {
+        fill: #c83a19;
+      }
+
+      .cls-58 {
+        fill: #e0601e;
+      }
+
+      .cls-59 {
+        fill: #d1481b;
+      }
+
+      .cls-60 {
+        fill: #cf461b;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-25" d="M366.6,154.27v6.15s0-6.15,0-6.15c36.21-49.97-22.38-113.52-75.3-81.67v6.15-6.15C286.85,11.1,201.03,0,181.01,58.34c-43.03-44.26-115.92,2.28-93.68,59.81h0C25.86,111.85,0,194.25,54.1,224.05h0c-51.16,34.6-17.88,114.31,42.77,102.44h0c-16.9,59.32,59.94,99.03,98.75,51.04v6.15-6.15c25.27,56.28,109.71,37.42,108.53-24.24v6.15-6.15c55.61,26.9,108.15-41.7,67.53-88.17,59.93-15.06,55.98-101.31-5.07-110.85Z"/>
+    </clipPath>
+  </defs>
+  <g class="cls-56">
+    <rect class="cls-49" width="431.61" height="433.81"/>
+    <ellipse class="cls-49" cx="219.6" cy="215.56" rx="133.69" ry="133.4"/>
+    <ellipse class="cls-44" cx="219.6" cy="215.56" rx="131.43" ry="131.14"/>
+    <ellipse class="cls-35" cx="219.6" cy="215.56" rx="129.16" ry="128.88"/>
+    <ellipse class="cls-28" cx="219.6" cy="215.56" rx="126.89" ry="126.62"/>
+    <ellipse class="cls-37" cx="219.6" cy="215.56" rx="124.63" ry="124.35"/>
+    <ellipse class="cls-48" cx="219.6" cy="215.56" rx="122.36" ry="122.09"/>
+    <ellipse class="cls-55" cx="219.6" cy="215.56" rx="120.1" ry="119.83"/>
+    <ellipse class="cls-12" cx="219.6" cy="215.56" rx="117.83" ry="117.57"/>
+    <ellipse class="cls-20" cx="219.6" cy="215.56" rx="115.56" ry="115.31"/>
+    <ellipse class="cls-52" cx="219.6" cy="215.56" rx="113.3" ry="113.05"/>
+    <ellipse class="cls-32" cx="219.6" cy="215.56" rx="111.03" ry="110.79"/>
+    <ellipse class="cls-30" cx="219.6" cy="215.56" rx="108.77" ry="108.53"/>
+    <ellipse class="cls-46" cx="219.6" cy="215.56" rx="106.5" ry="106.27"/>
+    <ellipse class="cls-18" cx="219.6" cy="215.56" rx="104.23" ry="104.01"/>
+    <ellipse class="cls-47" cx="219.6" cy="215.56" rx="101.97" ry="101.74"/>
+    <ellipse class="cls-24" cx="219.6" cy="215.56" rx="99.7" ry="99.48"/>
+    <ellipse class="cls-3" cx="219.6" cy="215.56" rx="97.44" ry="97.22"/>
+    <ellipse class="cls-13" cx="219.6" cy="215.56" rx="95.17" ry="94.96"/>
+    <ellipse class="cls-7" cx="219.6" cy="215.56" rx="92.9" ry="92.7"/>
+    <ellipse class="cls-58" cx="219.6" cy="215.56" rx="90.64" ry="90.44"/>
+    <ellipse class="cls-19" cx="219.6" cy="215.56" rx="88.37" ry="88.18"/>
+    <ellipse class="cls-40" cx="219.6" cy="215.56" rx="86.11" ry="85.92"/>
+    <ellipse class="cls-21" cx="219.6" cy="215.56" rx="83.84" ry="83.66"/>
+    <ellipse class="cls-14" cx="219.6" cy="215.56" rx="81.57" ry="81.4"/>
+    <ellipse class="cls-14" cx="219.6" cy="215.56" rx="79.31" ry="79.13"/>
+    <ellipse class="cls-29" cx="219.6" cy="215.56" rx="77.04" ry="76.87"/>
+    <ellipse class="cls-45" cx="219.6" cy="215.56" rx="74.78" ry="74.61"/>
+    <ellipse class="cls-22" cx="219.6" cy="215.56" rx="72.51" ry="72.35"/>
+    <ellipse class="cls-31" cx="219.6" cy="215.56" rx="70.24" ry="70.09"/>
+    <ellipse class="cls-43" cx="219.6" cy="215.56" rx="67.98" ry="67.83"/>
+    <ellipse class="cls-34" cx="219.6" cy="215.56" rx="65.71" ry="65.57"/>
+    <ellipse class="cls-39" cx="219.6" cy="215.56" rx="63.45" ry="63.31"/>
+    <ellipse class="cls-33" cx="219.6" cy="215.56" rx="61.18" ry="61.05"/>
+    <ellipse class="cls-42" cx="219.6" cy="215.56" rx="58.91" ry="58.79"/>
+    <ellipse class="cls-38" cx="219.6" cy="215.56" rx="56.65" ry="56.52"/>
+    <ellipse class="cls-54" cx="219.6" cy="215.56" rx="54.38" ry="54.26"/>
+    <ellipse class="cls-4" cx="219.6" cy="215.56" rx="52.12" ry="52"/>
+    <ellipse class="cls-50" cx="219.6" cy="215.56" rx="49.85" ry="49.74"/>
+    <ellipse class="cls-27" cx="219.6" cy="215.56" rx="47.59" ry="47.48"/>
+    <ellipse class="cls-36" cx="219.6" cy="215.56" rx="45.32" ry="45.22"/>
+    <ellipse class="cls-15" cx="219.6" cy="215.56" rx="43.05" ry="42.96"/>
+    <ellipse class="cls-59" cx="219.6" cy="215.56" rx="40.79" ry="40.7"/>
+    <ellipse class="cls-8" cx="219.6" cy="215.56" rx="38.52" ry="38.44"/>
+    <ellipse class="cls-60" cx="219.6" cy="215.56" rx="36.26" ry="36.18"/>
+    <ellipse class="cls-51" cx="219.6" cy="215.56" rx="33.99" ry="33.91"/>
+    <ellipse class="cls-2" cx="219.6" cy="215.56" rx="31.72" ry="31.65"/>
+    <ellipse class="cls-16" cx="219.6" cy="215.56" rx="29.46" ry="29.39"/>
+    <ellipse class="cls-16" cx="219.6" cy="215.56" rx="27.19" ry="27.13"/>
+    <ellipse class="cls-5" cx="219.6" cy="215.56" rx="24.93" ry="24.87"/>
+    <ellipse class="cls-26" cx="219.6" cy="215.56" rx="22.66" ry="22.61"/>
+    <ellipse class="cls-10" cx="219.6" cy="215.56" rx="20.39" ry="20.35"/>
+    <ellipse class="cls-1" cx="219.6" cy="215.56" rx="18.13" ry="18.09"/>
+    <ellipse class="cls-23" cx="219.6" cy="215.56" rx="15.86" ry="15.83"/>
+    <ellipse class="cls-17" cx="219.6" cy="215.56" rx="13.6" ry="13.57"/>
+    <ellipse class="cls-57" cx="219.6" cy="215.56" rx="11.33" ry="11.3"/>
+    <ellipse class="cls-41" cx="219.6" cy="215.56" rx="9.06" ry="9.04"/>
+    <ellipse class="cls-53" cx="219.6" cy="215.56" rx="6.8" ry="6.78"/>
+    <ellipse class="cls-6" cx="219.6" cy="215.56" rx="4.53" ry="4.52"/>
+    <ellipse class="cls-9" cx="219.6" cy="215.56" rx="2.27" ry="2.26"/>
+  </g>
+  <polygon class="cls-11" points="339.03 248.71 254.19 254.29 257.04 339.07 209.78 268.56 137.61 313.41 175.18 237.31 100.18 197.38 185.01 191.8 182.16 107.02 229.43 177.53 301.59 132.68 264.02 208.78 339.03 248.71"/>
+</svg>

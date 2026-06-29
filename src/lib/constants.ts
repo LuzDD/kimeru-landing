@@ -28,10 +28,10 @@ export const EMPRESA = {
 }
 
 export const LOGROS = [
-  { valor: 500, sufijo: '+', etiqueta: 'Agricultores conectados' },
-  { valor: 12,  sufijo: '',  etiqueta: 'Municipios alcanzados' },
-  { valor: 30,  sufijo: '%', etiqueta: 'Aumento promedio en ingresos' },
-  { valor: 2,   sufijo: '',  etiqueta: 'Años de impacto' },
+  { valor: 3,  sufijo: 'M+', etiqueta: 'Personas que viven del campo en Colombia' },
+  { valor: 10, sufijo: '%',  etiqueta: 'Del PIB nacional genera la agricultura' },
+  { valor: 70, sufijo: 'M',  etiqueta: 'Toneladas de alimentos producidas al año' },
+  { valor: 8,  sufijo: '%',  etiqueta: 'Creció el sector agropecuario en 2024' },
 ]
 
 export const PASOS = [

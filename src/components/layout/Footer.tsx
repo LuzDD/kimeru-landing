@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Instagram, Linkedin } from 'lucide-react'
 import { EMPRESA } from '../../lib/constants'
+import logoHeader from '../../assets/logo-header.png'
 
 export default function Footer() {
   return (
@@ -9,11 +10,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-10">
           {/* Logo + razón social */}
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-7 h-7 bg-kimeru-naranja rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-xs">K</span>
-              </div>
-              <span className="font-bold text-lg">{EMPRESA.nombre}</span>
+            <div className="flex items-center mb-2">
+              <img src={logoHeader} alt={EMPRESA.nombre} className="h-9 w-auto" />
             </div>
             <p className="text-white/40 text-sm">{EMPRESA.razonSocial}</p>
           </div>

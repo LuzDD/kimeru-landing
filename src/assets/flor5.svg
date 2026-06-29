@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 174.34 397.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c93d1a;
+      }
+
+      .cls-2 {
+        fill: #cd441b;
+      }
+
+      .cls-3 {
+        fill: #e2631e;
+      }
+
+      .cls-4 {
+        fill: #d44d1c;
+      }
+
+      .cls-5 {
+        fill: #cc401a;
+      }
+
+      .cls-6 {
+        fill: #c53719;
+      }
+
+      .cls-7 {
+        fill: #e1611e;
+      }
+
+      .cls-8 {
+        fill: #d0471b;
+      }
+
+      .cls-9 {
+        fill: #c43519;
+      }
+
+      .cls-10 {
+        fill: #ca3e1a;
+      }
+
+      .cls-11 {
+        fill: #fcc10f;
+      }
+
+      .cls-12 {
+        fill: #e96d1f;
+      }
+
+      .cls-13 {
+        fill: #e1621e;
+      }
+
+      .cls-14 {
+        fill: #dd5b1e;
+      }
+
+      .cls-15 {
+        fill: #d1491b;
+      }
+
+      .cls-16 {
+        fill: #cd421a;
+      }
+
+      .cls-17 {
+        fill: #c83b1a;
+      }
+
+      .cls-18 {
+        fill: #e5661f;
+      }
+
+      .cls-19 {
+        fill: #df5f1e;
+      }
+
+      .cls-20 {
+        fill: #e86c1f;
+      }
+
+      .cls-21 {
+        fill: #de5d1e;
+      }
+
+      .cls-22 {
+        fill: #da571d;
+      }
+
+      .cls-23 {
+        fill: #c93c1a;
+      }
+
+      .cls-24 {
+        fill: #e3641e;
+      }
+
+      .cls-25 {
+        fill: none;
+      }
+
+      .cls-26 {
+        fill: #cb3f1a;
+      }
+
+      .cls-27 {
+        fill: #d24b1c;
+      }
+
+      .cls-28 {
+        fill: #ec721f;
+      }
+
+      .cls-29 {
+        fill: #dc591d;
+      }
+
+      .cls-30 {
+        fill: #e6681f;
+      }
+
+      .cls-31 {
+        fill: #d9561d;
+      }
+
+      .cls-32 {
+        fill: #e66a1f;
+      }
+
+      .cls-33 {
+        fill: #d7521c;
+      }
+
+      .cls-34 {
+        fill: #d8541d;
+      }
+
+      .cls-35 {
+        fill: #ec731f;
+      }
+
+      .cls-36 {
+        fill: #d24a1b;
+      }
+
+      .cls-37 {
+        fill: #eb711f;
+      }
+
+      .cls-38 {
+        fill: #d54f1c;
+      }
+
+      .cls-39 {
+        fill: #41715f;
+      }
+
+      .cls-40 {
+        fill: #d8531d;
+      }
+
+      .cls-41 {
+        fill: #df5e1e;
+      }
+
+      .cls-42 {
+        fill: #c73919;
+      }
+
+      .cls-43 {
+        fill: #d6511c;
+      }
+
+      .cls-44 {
+        fill: #d9551d;
+      }
+
+      .cls-45 {
+        fill: #ed741f;
+      }
+
+      .cls-46 {
+        fill: #db581d;
+      }
+
+      .cls-47 {
+        fill: #e5681f;
+      }
+
+      .cls-48 {
+        fill: #e4651f;
+      }
+
+      .cls-49 {
+        fill: #ea6f1f;
+      }
+
+      .cls-50 {
+        fill: #ed751f;
+      }
+
+      .cls-51 {
+        fill: #d34c1c;
+      }
+
+      .cls-52 {
+        fill: #ce451b;
+      }
+
+      .cls-53 {
+        fill: #e76b1f;
+      }
+
+      .cls-54 {
+        fill: #c63819;
+      }
+
+      .cls-55 {
+        fill: #d54e1c;
+      }
+
+      .cls-56 {
+        fill: #ea6e1f;
+      }
+
+      .cls-57 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-58 {
+        fill: #c83a19;
+      }
+
+      .cls-59 {
+        fill: #e0601e;
+      }
+
+      .cls-60 {
+        fill: #d1481b;
+      }
+
+      .cls-61 {
+        fill: #cf461b;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-25" d="M152.89,60.15v2.76s0-2.76,0-2.76c16.19-22.39-10.01-50.86-33.67-36.59v2.76-2.76c-1.99-27.56-40.36-32.53-49.31-6.39-19.24-19.83-51.83,1.02-41.88,26.8h0C.55,41.14-11.01,78.06,13.18,91.42h0c-22.87,15.5-7.99,51.22,19.12,45.9h0c-7.55,26.58,26.8,44.37,44.15,22.87v2.76-2.76c11.3,25.22,49.05,16.77,48.52-10.86v2.76-2.76c24.86,12.05,48.35-18.69,30.19-39.51,26.79-6.75,25.03-45.39-2.27-49.67Z"/>
+    </clipPath>
+  </defs>
+  <g>
+    <path class="cls-39" d="M89.58,266.66h58.76v-37.23s-2.96-1.74-5.75,1.05c-2.79,2.79-7.67,14.82-19.53,16.04-11.86,1.22-32.43,12.56-33.48,20.14Z"/>
+    <path class="cls-39" d="M92.91,266.66h-58.76v-37.23s2.96-1.74,5.75,1.05c2.79,2.79,7.67,14.82,19.53,16.04,11.86,1.22,32.43,12.56,33.48,20.14Z"/>
+    <path class="cls-39" d="M85.39,216.68h58.76v-37.23s-2.96-1.74-5.75,1.05c-2.79,2.79-7.67,14.82-19.53,16.04-11.86,1.22-32.43,12.56-33.48,20.14Z"/>
+    <path class="cls-39" d="M92.91,216.68h-58.76v-37.23s2.96-1.74,5.75,1.05c2.79,2.79,7.67,14.82,19.53,16.04,11.86,1.22,32.43,12.56,33.48,20.14Z"/>
+    <path class="cls-39" d="M91.36,363.75h58.76v-37.23s-2.96-1.74-5.75,1.05c-2.79,2.79-7.67,14.82-19.53,16.04-11.86,1.22-32.43,12.56-33.48,20.14Z"/>
+    <path class="cls-39" d="M94.69,363.75h-58.76v-37.23s2.96-1.74,5.75,1.05c2.79,2.79,7.67,14.82,19.53,16.04,11.86,1.22,32.43,12.56,33.48,20.14Z"/>
+    <path class="cls-39" d="M87.17,313.78h58.76v-37.23s-2.96-1.74-5.75,1.05c-2.79,2.79-7.67,14.82-19.53,16.04-11.86,1.22-32.43,12.56-33.48,20.14Z"/>
+    <path class="cls-39" d="M94.69,313.78h-58.76v-37.23s2.96-1.74,5.75,1.05c2.79,2.79,7.67,14.82,19.53,16.04,11.86,1.22,32.43,12.56,33.48,20.14Z"/>
+    <rect class="cls-39" x="89.21" y="135.64" width="7.63" height="262.05"/>
+  </g>
+  <g>
+    <g class="cls-57">
+      <rect class="cls-50" x="-11.01" y="-8.97" width="192.97" height="194.38"/>
+      <circle class="cls-50" cx="87.17" cy="87.61" r="59.77"/>
+      <circle class="cls-45" cx="87.17" cy="87.61" r="58.76"/>
+      <circle class="cls-35" cx="87.17" cy="87.61" r="57.75"/>
+      <circle class="cls-28" cx="87.17" cy="87.61" r="56.73"/>
+      <circle class="cls-37" cx="87.17" cy="87.61" r="55.72"/>
+      <circle class="cls-49" cx="87.17" cy="87.61" r="54.71"/>
+      <circle class="cls-56" cx="87.17" cy="87.61" r="53.69"/>
+      <circle class="cls-12" cx="87.17" cy="87.61" r="52.68"/>
+      <circle class="cls-20" cx="87.17" cy="87.61" r="51.67"/>
+      <circle class="cls-53" cx="87.17" cy="87.61" r="50.65"/>
+      <circle class="cls-32" cx="87.17" cy="87.61" r="49.64"/>
+      <circle class="cls-30" cx="87.17" cy="87.61" r="48.63"/>
+      <circle class="cls-47" cx="87.17" cy="87.61" r="47.61"/>
+      <circle class="cls-18" cx="87.17" cy="87.61" r="46.6"/>
+      <circle class="cls-48" cx="87.17" cy="87.61" r="45.59"/>
+      <circle class="cls-24" cx="87.17" cy="87.61" r="44.58"/>
+      <circle class="cls-3" cx="87.17" cy="87.61" r="43.56"/>
+      <circle class="cls-13" cx="87.17" cy="87.61" r="42.55"/>
+      <circle class="cls-7" cx="87.17" cy="87.61" r="41.54"/>
+      <circle class="cls-59" cx="87.17" cy="87.61" r="40.52"/>
+      <circle class="cls-19" cx="87.17" cy="87.61" r="39.51"/>
+      <circle class="cls-41" cx="87.17" cy="87.61" r="38.5"/>
+      <circle class="cls-21" cx="87.17" cy="87.61" r="37.48"/>
+      <circle class="cls-14" cx="87.17" cy="87.61" r="36.47"/>
+      <circle class="cls-14" cx="87.17" cy="87.61" r="35.46"/>
+      <circle class="cls-29" cx="87.17" cy="87.61" r="34.44"/>
+      <circle class="cls-46" cx="87.17" cy="87.61" r="33.43"/>
+      <circle class="cls-22" cx="87.17" cy="87.61" r="32.42"/>
+      <circle class="cls-31" cx="87.17" cy="87.61" r="31.41"/>
+      <circle class="cls-44" cx="87.17" cy="87.61" r="30.39"/>
+      <circle class="cls-34" cx="87.17" cy="87.61" r="29.38"/>
+      <circle class="cls-40" cx="87.17" cy="87.61" r="28.37"/>
+      <circle class="cls-33" cx="87.17" cy="87.61" r="27.35"/>
+      <circle class="cls-43" cx="87.17" cy="87.61" r="26.34"/>
+      <circle class="cls-38" cx="87.17" cy="87.61" r="25.33"/>
+      <circle class="cls-55" cx="87.17" cy="87.61" r="24.31"/>
+      <circle class="cls-4" cx="87.17" cy="87.61" r="23.3"/>
+      <circle class="cls-51" cx="87.17" cy="87.61" r="22.29"/>
+      <circle class="cls-27" cx="87.17" cy="87.61" r="21.27"/>
+      <circle class="cls-36" cx="87.17" cy="87.61" r="20.26"/>
+      <circle class="cls-15" cx="87.17" cy="87.61" r="19.25"/>
+      <circle class="cls-60" cx="87.17" cy="87.61" r="18.24"/>
+      <circle class="cls-8" cx="87.17" cy="87.61" r="17.22"/>
+      <circle class="cls-61" cx="87.17" cy="87.61" r="16.21"/>
+      <circle class="cls-52" cx="87.17" cy="87.61" r="15.2"/>
+      <circle class="cls-2" cx="87.17" cy="87.61" r="14.18"/>
+      <circle class="cls-16" cx="87.17" cy="87.61" r="13.17"/>
+      <circle class="cls-16" cx="87.17" cy="87.61" r="12.16"/>
+      <circle class="cls-5" cx="87.17" cy="87.61" r="11.14"/>
+      <circle class="cls-26" cx="87.17" cy="87.61" r="10.13"/>
+      <circle class="cls-10" cx="87.17" cy="87.61" r="9.12"/>
+      <circle class="cls-1" cx="87.17" cy="87.61" r="8.1"/>
+      <circle class="cls-23" cx="87.17" cy="87.61" r="7.09"/>
+      <circle class="cls-17" cx="87.17" cy="87.61" r="6.08"/>
+      <circle class="cls-58" cx="87.17" cy="87.61" r="5.07"/>
+      <circle class="cls-42" cx="87.17" cy="87.61" r="4.05"/>
+      <circle class="cls-54" cx="87.17" cy="87.61" r="3.04"/>
+      <circle class="cls-6" cx="87.17" cy="87.61" r="2.03"/>
+      <circle class="cls-9" cx="87.17" cy="87.61" r="1.01"/>
+    </g>
+    <polygon class="cls-11" points="140.56 102.46 102.64 104.97 103.91 142.95 82.78 111.36 50.51 131.46 67.31 97.36 33.78 79.47 71.7 76.96 70.43 38.98 91.56 70.57 123.82 50.48 107.03 84.57 140.56 102.46"/>
+  </g>
+</svg>

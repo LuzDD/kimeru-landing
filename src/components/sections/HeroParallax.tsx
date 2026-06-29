@@ -116,15 +116,6 @@ export default function HeroParallax() {
 
       {/* ══ TEXTO CENTRADO (sobre todas las capas) ══════════════════════════ */}
       <div className="relative z-10 text-center text-white px-6 max-w-3xl mx-auto pb-[22vh]">
-        <motion.span
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-block text-kimeru-verde-claro text-sm font-semibold uppercase tracking-widest mb-5"
-        >
-          Agtech colombiana
-        </motion.span>
-
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}

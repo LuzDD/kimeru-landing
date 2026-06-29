@@ -2,25 +2,34 @@ import { motion } from 'framer-motion'
 import { useScrollAnimation, fadeUp, stagger } from '../../hooks/useScrollAnimation'
 import { LOGROS } from '../../lib/constants'
 import AnimatedCounter from '../ui/AnimatedCounter'
+import flor3 from '../../assets/flor3.svg'
+import flor4 from '../../assets/flor4.svg'
+import flor5 from '../../assets/flor5.svg'
+
+const sway = {
+  idle:  { rotate: 0 },
+  hover: {
+    rotate: [-5, 5],
+    transition: { duration: 2.8, repeat: Infinity, repeatType: 'mirror' as const, ease: 'easeInOut' },
+  },
+}
+
+const flowerImg = 'w-20 select-none'
+const flowerStyle = { transformOrigin: 'bottom center' }
 
 export default function Logros() {
   const { ref, animate } = useScrollAnimation()
 
   return (
-    <section id="logros" className="py-24 px-6 bg-kimeru-verde-profundo">
+    <section id="logros" className="relative py-24 px-6 bg-kimeru-verde-profundo overflow-visible">
       <div className="max-w-6xl mx-auto">
-        <motion.div
-          ref={ref}
-          variants={stagger}
-          initial="hidden"
-          animate={animate}
-        >
+        <motion.div ref={ref} variants={stagger} initial="hidden" animate={animate}>
           <motion.div variants={fadeUp} className="text-center mb-16">
             <span className="text-kimeru-verde-claro text-sm font-semibold uppercase tracking-widest">
-              Nuestro impacto
+              El agro colombiano en cifras
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">
-              Números que hablan por el campo
+              Una industria que mueve a Colombia
             </h2>
           </motion.div>
 
@@ -39,7 +48,29 @@ export default function Logros() {
             ))}
           </div>
         </motion.div>
+
+        {/* Flores — centradas en móvil, escondidas en desktop (versión desktop está absoluta) */}
+        <motion.div
+          className="flex lg:hidden items-end justify-center gap-4 mt-10"
+          whileHover="hover"
+          initial="idle"
+        >
+          <motion.img src={flor3} alt="" className={flowerImg} style={flowerStyle} variants={sway} />
+          <motion.img src={flor4} alt="" className="w-16 select-none" style={flowerStyle} variants={sway} />
+          <motion.img src={flor5} alt="" className={flowerImg} style={flowerStyle} variants={sway} />
+        </motion.div>
       </div>
+
+      {/* Flores desktop — asoman desde el borde superior derecho */}
+      <motion.div
+        className="hidden lg:flex absolute top-0 right-10 items-end gap-2 -translate-y-[90%] z-10"
+        whileHover="hover"
+        initial="idle"
+      >
+        <motion.img src={flor3} alt="" className={flowerImg} style={flowerStyle} variants={sway} />
+        <motion.img src={flor4} alt="" className="w-16 select-none" style={flowerStyle} variants={sway} />
+        <motion.img src={flor5} alt="" className={flowerImg} style={flowerStyle} variants={sway} />
+      </motion.div>
     </section>
   )
 }

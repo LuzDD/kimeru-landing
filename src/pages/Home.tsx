@@ -10,6 +10,22 @@ import Logros from '../components/sections/Logros'
 import ComoFunciona from '../components/sections/ComoFunciona'
 import Contacto from '../components/sections/Contacto'
 import { useScrollAnimation, stagger, fadeUp } from '../hooks/useScrollAnimation'
+import flor1 from '../assets/flor1.svg'
+import flor2 from '../assets/flor2.svg'
+
+function SpinFlower({ src, size, style }: { src: string; size: number; style: React.CSSProperties }) {
+  return (
+    <motion.img
+      src={src}
+      alt=""
+      draggable={false}
+      className="absolute pointer-events-none select-none hidden lg:block"
+      style={{ width: size, height: size, ...style }}
+      animate={{ rotate: 360 }}
+      transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
+    />
+  )
+}
 
 const legalItems = [
   {
@@ -83,7 +99,15 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroParallax />
-        <div className="relative z-10 bg-white">
+        <div className="relative z-10 bg-white" style={{ overflowX: 'clip' }}>
+          {/* ── Flores decorativas rotantes ───────────────────────────────── */}
+          <SpinFlower src={flor2} size={400} style={{ top: '-0%',  right: -130 }} />
+          <SpinFlower src={flor2} size={520} style={{ top: '17%', left:  -140 }} />
+          <SpinFlower src={flor1} size={600} style={{ top: '28%', right: -110 }} />
+          <SpinFlower src={flor1} size={280} style={{ top: '58%', left:  -110 }} />
+          <SpinFlower src={flor2} size={310} style={{ top: '72%', right: -130 }} />
+          <SpinFlower src={flor2} size={300} style={{ top: '89%', left:  -130 }} />
+
           <QuienesSomos />
           <Logros />
           <ComoFunciona />

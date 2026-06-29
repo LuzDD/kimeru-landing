@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { EMPRESA } from '../../lib/constants'
+import logoHeader from '../../assets/logo-header.png'
 
 const hashLinks = [
   { label: 'Quiénes somos', href: '#quienes-somos' },
@@ -22,12 +23,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 px-6 py-4"
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        {/* Logo — placeholder hasta que Lucy provea el SVG */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-kimeru-naranja rounded-md flex items-center justify-center">
-            <span className="text-white font-bold text-sm">K</span>
-          </div>
-          <span className="text-white font-bold text-lg tracking-tight">{EMPRESA.nombre}</span>
+        <Link to="/" className="flex items-center">
+          <img src={logoHeader} alt={EMPRESA.nombre} className="h-10 w-auto" />
         </Link>
 
         {/* Desktop */}
