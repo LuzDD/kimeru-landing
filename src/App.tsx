@@ -12,7 +12,7 @@ const router = createBrowserRouter(
     { path: '/terminos',      element: <Terminos /> },
     { path: '/eliminar-datos', element: <EliminarDatos /> },
   ],
-  { basename: '/kimeru' },
+  { basename: import.meta.env.DEV ? '/' : '/kimeru' },
 )
 
 export default function App() {
