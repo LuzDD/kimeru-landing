@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Privacidad from './pages/Privacidad'
 import Terminos from './pages/Terminos'
 import EliminarDatos from './pages/EliminarDatos'
+import FloatingWhatsApp from './components/ui/FloatingWhatsApp'
 
 const router = createBrowserRouter(
   [
@@ -15,5 +16,10 @@ const router = createBrowserRouter(
 )
 
 export default function App() {
-  return <RouterProvider router={router} />
+  return (
+    <>
+      <RouterProvider router={router} />
+      <FloatingWhatsApp />
+    </>
+  )
 }

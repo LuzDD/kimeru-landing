@@ -53,46 +53,77 @@ export default function EliminarDatos() {
 
           <div className="space-y-6 text-gray-700 leading-relaxed mb-12">
             <p>
-              Conforme al artículo 8 de la <strong>{EMPRESA.legal.ley}</strong> (régimen general
-              de protección de datos personales — HABEAS DATA) de la República de Colombia, tienes
-              derecho a solicitar la eliminación permanente de tus datos personales de la plataforma
-              Kimeru.
+              Conforme a la <strong>{EMPRESA.legal.ley}</strong> de Colombia, tienes derecho a
+              solicitar en cualquier momento la eliminación de tus datos personales de los sistemas
+              de Kimeru.
+            </p>
+            <p className="bg-kimeru-verde-claro/10 border-l-2 border-kimeru-verde-profundo rounded px-4 py-3 text-sm">
+              Una vez procesada tu solicitud, tus datos personales identificables serán eliminados de
+              nuestras bases de datos activas en un plazo máximo de{' '}
+              <strong>{EMPRESA.legal.plazoEliminacion}</strong>.
             </p>
 
             <div>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                ¿Qué datos se eliminan?
+                ¿Qué se elimina?
               </h2>
               <ul className="list-disc list-inside space-y-1">
-                <li>Nombre y número de teléfono (WhatsApp)</li>
-                <li>Ubicación geográfica registrada</li>
-                <li>Datos de cultivos e historial agrícola</li>
-                <li>Historial de interacciones con la plataforma</li>
+                <li>Datos de identificación y contacto</li>
+                <li>Información productiva registrada a tu nombre</li>
+                <li>Historial de interacciones en el chatbot</li>
               </ul>
+              <p className="mt-3 text-sm text-gray-500">
+                La información agregada y anonimizada (estadísticas territoriales sin identificación
+                personal) puede conservarse, ya que no permite identificarte individualmente.
+              </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
                 Cómo solicitar la eliminación
               </h2>
-              <ol className="list-decimal list-inside space-y-2">
-                <li>Completa el formulario a continuación con tus datos de identificación.</li>
+              <p>Puedes hacerlo completando el formulario a continuación, o directamente por:</p>
+              <ul className="list-disc list-inside mt-3 space-y-1">
                 <li>
-                  Haz clic en <strong>"Enviar solicitud"</strong> — se abrirá tu cliente de correo
-                  con el mensaje prellenado.
-                </li>
-                <li>
-                  Envía el correo a{' '}
+                  Correo a{' '}
                   <a href={`mailto:${EMPRESA.contacto.email}`} className="text-kimeru-naranja underline">
                     {EMPRESA.contacto.email}
-                  </a>.
+                  </a>{' '}
+                  con el asunto "Solicitud de eliminación de datos", tu nombre completo y el número
+                  con el que te registraste.
                 </li>
-                <li>Recibirás confirmación de recepción en un plazo de <strong>2 días hábiles</strong>.</li>
+                <li>
+                  WhatsApp al{' '}
+                  <a
+                    href={`https://wa.me/${EMPRESA.contacto.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-kimeru-naranja underline"
+                  >
+                    +57 313 697 6123
+                  </a>{' '}
+                  indicando "Quiero eliminar mis datos de Kimeru" junto con tu nombre y número registrado.
+                </li>
+              </ul>
+              <ol className="list-decimal list-inside space-y-2 mt-4">
+                <li>Recibirás confirmación de recepción en un plazo máximo de <strong>2 días hábiles</strong>.</li>
                 <li>
                   La eliminación se completará en un máximo de{' '}
-                  <strong>{EMPRESA.legal.plazoEliminacion}</strong> desde la recepción de la solicitud.
+                  <strong>{EMPRESA.legal.plazoEliminacion}</strong> desde la confirmación.
                 </li>
+                <li>Te avisaremos cuando el proceso esté completo.</li>
               </ol>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                Consecuencias de la eliminación
+              </h2>
+              <p>
+                Al eliminar tus datos, tu perfil dejará de estar activo en Kimeru y no podrás recibir
+                información de mercado, alertas ni análisis territoriales a través del chatbot. Si en
+                el futuro deseas volver a usar el servicio, deberás registrarte nuevamente.
+              </p>
             </div>
 
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">

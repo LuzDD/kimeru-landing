@@ -49,9 +49,9 @@ export default function Logros() {
           </div>
         </motion.div>
 
-        {/* Flores — centradas en móvil, escondidas en desktop (versión desktop está absoluta) */}
+        {/* Flores — centradas en móvil/tablet, escondidas en desktop grande (versión desktop está absoluta) */}
         <motion.div
-          className="flex lg:hidden items-end justify-center gap-4 mt-10"
+          className="flex xl:hidden items-end justify-center gap-4 mt-10"
           whileHover="hover"
           initial="idle"
         >
@@ -63,7 +63,7 @@ export default function Logros() {
 
       {/* Flores desktop — asoman desde el borde superior derecho */}
       <motion.div
-        className="hidden lg:flex absolute top-0 right-10 items-end gap-2 -translate-y-[90%] z-10"
+        className="hidden xl:flex absolute top-0 right-10 items-end gap-2 -translate-y-[90%] z-10"
         whileHover="hover"
         initial="idle"
       >

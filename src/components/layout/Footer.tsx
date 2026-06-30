@@ -5,7 +5,7 @@ import logoHeader from '../../assets/logo-header.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-kimeru-negro text-white py-14 px-6">
+    <footer className="bg-kimeru-verde-profundo text-white py-14 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-10">
           {/* Logo + razón social */}
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/10 text-center text-white/30 text-xs">
-          © 2025 {EMPRESA.razonSocial}. Todos los derechos reservados.
+          © 2026 {EMPRESA.razonSocial}. Todos los derechos reservados.
         </div>
       </div>
     </footer>

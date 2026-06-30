@@ -6,7 +6,10 @@ import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 import HeroParallax from '../components/sections/HeroParallax'
 import QuienesSomos from '../components/sections/QuienesSomos'
+import ParaQuienEs from '../components/sections/ParaQuienEs'
 import Logros from '../components/sections/Logros'
+import Traccion from '../components/sections/Traccion'
+import Aliados from '../components/sections/Aliados'
 import ComoFunciona from '../components/sections/ComoFunciona'
 import Contacto from '../components/sections/Contacto'
 import { useScrollAnimation, stagger, fadeUp } from '../hooks/useScrollAnimation'
@@ -19,7 +22,7 @@ function SpinFlower({ src, size, style }: { src: string; size: number; style: Re
       src={src}
       alt=""
       draggable={false}
-      className="absolute pointer-events-none select-none hidden lg:block"
+      className="absolute pointer-events-none select-none hidden xl:block"
       style={{ width: size, height: size, ...style }}
       animate={{ rotate: 360 }}
       transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
@@ -109,7 +112,10 @@ export default function Home() {
           <SpinFlower src={flor2} size={300} style={{ top: '89%', left:  -130 }} />
 
           <QuienesSomos />
+          <ParaQuienEs />
           <Logros />
+          <Traccion />
+          <Aliados />
           <ComoFunciona />
           <SeccionLegal />
           <Contacto />

@@ -14,7 +14,7 @@ export default function ComoFunciona() {
   const { ref, animate } = useScrollAnimation()
 
   return (
-    <section id="como-funciona" className="py-24 px-6 bg-gray-50">
+    <section id="como-funciona" className="py-24 px-6 bg-kimeru-verde-profundo">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -23,10 +23,10 @@ export default function ComoFunciona() {
           animate={animate}
         >
           <motion.div variants={fadeUp} className="text-center mb-16">
-            <span className="text-kimeru-naranja text-sm font-semibold uppercase tracking-widest">
+            <span className="text-kimeru-verde-claro text-sm font-semibold uppercase tracking-widest">
               Así de simple
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-kimeru-verde-profundo mt-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">
               Cómo funciona Kimeru
             </h2>
           </motion.div>

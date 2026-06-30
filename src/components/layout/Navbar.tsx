@@ -13,14 +13,14 @@ const hashLinks = [
 
 export default function Navbar() {
   const { scrollY } = useScroll()
-  const bg     = useTransform(scrollY, [0, 80], ['rgba(45,70,64,0)',    'rgba(45,70,64,0.97)'])
-  const shadow = useTransform(scrollY, [0, 80], ['none', '0 2px 20px rgba(0,0,0,0.18)'])
+  const bg     = useTransform(scrollY, [0, 80], ['rgba(45,70,64,0.25)', 'rgba(45,70,64,0.97)'])
+  const shadow = useTransform(scrollY, [0, 80], ['0 2px 20px rgba(0,0,0,0.1)', '0 2px 20px rgba(0,0,0,0.18)'])
   const [open, setOpen] = useState(false)
 
   return (
     <motion.nav
       style={{ backgroundColor: bg, boxShadow: shadow }}
-      className="fixed top-0 left-0 right-0 z-50 px-6 py-4"
+      className="fixed top-0 left-0 right-0 z-50 px-6 py-4 backdrop-blur-md border-b border-white/10"
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center">

@@ -39,18 +39,20 @@ export default function Contacto() {
               ¿Tienes preguntas?
             </motion.h2>
             <motion.p variants={fadeUp} className="text-gray-600 leading-relaxed mb-8">
-              Escríbenos y te respondemos a la brevedad. También puedes escribirnos
-              directamente por WhatsApp.
+              Escríbenos y te respondemos a la brevedad. También puedes seguirnos
+              en nuestro canal de WhatsApp para enterarte de las novedades.
             </motion.p>
 
-            {EMPRESA.contacto.whatsapp && (
+            {EMPRESA.redes.whatsappCanal && (
               <motion.div variants={fadeUp} className="mb-6">
                 <Button
-                  href={`https://wa.me/${EMPRESA.contacto.whatsapp}`}
+                  href={EMPRESA.redes.whatsappCanal}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   variant="primary"
                 >
                   <MessageCircle size={18} />
-                  Escríbenos por WhatsApp
+                  Síguenos por WhatsApp
                 </Button>
               </motion.div>
             )}

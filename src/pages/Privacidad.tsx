@@ -35,124 +35,194 @@ export default function Privacidad() {
           <div className="space-y-10 text-gray-700 leading-relaxed">
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                1. Responsable del tratamiento
+                1. ¿Qué es Kimeru?
               </h2>
               <p>
-                <strong>{EMPRESA.razonSocial}</strong>, identificada bajo las leyes de la República
-                de Colombia, es la responsable del tratamiento de los datos personales recolectados
-                a través de la plataforma Kimeru y del presente sitio web.
+                Kimeru es una iniciativa tecnológica que organiza información agroproductiva para
+                generar datos útiles para productores, asociaciones, empresas e instituciones del
+                sector agroalimentario.
               </p>
               <p className="mt-2">
+                A través de herramientas digitales como WhatsApp, Kimeru permite registrar información
+                relacionada con la producción agrícola y transformarla en información estructurada que
+                facilite la organización de la oferta productiva, el análisis territorial y la toma de
+                decisiones.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                2. Responsable del tratamiento
+              </h2>
+              <p>El responsable del tratamiento de los datos personales es:</p>
+              <p className="mt-2">
+                <strong>Kimeru — {EMPRESA.razonSocial}</strong>
+                <br />
                 Contacto:{' '}
                 <a href={`mailto:${EMPRESA.contacto.email}`} className="text-kimeru-naranja underline">
                   {EMPRESA.contacto.email}
                 </a>
+                <br />
+                Medellín, Colombia
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                2. Datos que recopilamos
+                3. ¿Qué información recopilamos?
               </h2>
-              <p>Recopilamos los siguientes datos personales:</p>
+              <p>Durante el registro y uso del chatbot, Kimeru podrá solicitar:</p>
               <ul className="list-disc list-inside mt-3 space-y-1">
-                <li>Nombre completo</li>
-                <li>Número de teléfono (WhatsApp)</li>
-                <li>Ubicación geográfica aproximada (municipio y departamento)</li>
-                <li>Información sobre cultivos y actividad agrícola</li>
-                <li>Historial de interacciones con la plataforma vía WhatsApp</li>
+                <li>Identificación y datos de contacto</li>
+                <li>Ubicación territorial</li>
+                <li>Productos cultivados o transformados</li>
+                <li>Meses de cosecha o disponibilidad</li>
+                <li>Volumen aproximado de producción</li>
+                <li>Información básica de comercialización y logística</li>
               </ul>
+              <p className="mt-3">
+                Dependiendo del avance del registro, también podrán solicitarse datos sobre costos de
+                producción, infraestructura, formalización o necesidades del territorio.
+              </p>
+              <p className="mt-3 bg-kimeru-verde-claro/10 border-l-2 border-kimeru-verde-profundo rounded px-4 py-3 text-sm">
+                Algunas preguntas relacionadas con género, grupo poblacional o rango de edad son
+                opcionales y se tratan con especial protección conforme a la legislación colombiana.
+                No responderlas no impide el uso del servicio.
+              </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                3. Finalidad del tratamiento
-              </h2>
-              <p>Los datos recopilados se utilizan para:</p>
-              <ul className="list-disc list-inside mt-3 space-y-1">
-                <li>Prestar el servicio de análisis de precios y mercados agrícolas vía WhatsApp</li>
-                <li>Personalizar la información según la región y el tipo de cultivo del usuario</li>
-                <li>Mejorar la plataforma y los algoritmos de análisis</li>
-                <li>Comunicar novedades, actualizaciones y alertas del servicio</li>
-                <li>Cumplir con obligaciones legales y regulatorias</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                4. Base legal del tratamiento
+                4. ¿Para qué usamos la información?
               </h2>
               <p>
-                El tratamiento de datos personales se realiza con base en el consentimiento libre,
-                previo, expreso e informado del titular, conforme a lo establecido en la{' '}
-                <strong>{EMPRESA.legal.ley}</strong> y el Decreto 1377 de 2013 de la República de
-                Colombia (régimen general de protección de datos personales — HABEAS DATA).
+                La información compartida permite organizar la oferta productiva del territorio,
+                generar reportes agregados, identificar tendencias productivas y comerciales, y enviar
+                información útil como precios, alertas y análisis de mercado.
+              </p>
+              <p className="mt-2">
+                También puede usarse para fortalecer la articulación entre productores, asociaciones,
+                empresas e instituciones, y apoyar ejercicios de planeación territorial y sectorial.
+              </p>
+              <p className="mt-3 bg-kimeru-verde-claro/10 border-l-2 border-kimeru-verde-profundo rounded px-4 py-3 text-sm">
+                Los datos personales individuales no serán vendidos ni compartidos con terceros sin
+                autorización del titular, salvo obligación legal.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                5. Derechos del titular
+                5. ¿Qué NO hace Kimeru?
               </h2>
-              <p>Conforme a la {EMPRESA.legal.ley}, el titular de los datos tiene derecho a:</p>
+              <ul className="list-disc list-inside mt-3 space-y-1">
+                <li>No compra ni vende productos</li>
+                <li>No garantiza ventas ni negocios</li>
+                <li>No actúa como intermediario comercial</li>
+                <li>No opera transporte ni logística</li>
+                <li>No reemplaza los acuerdos comerciales entre productores y compradores</li>
+              </ul>
+              <p className="mt-3">Las decisiones comerciales son responsabilidad exclusiva de cada parte.</p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                6. Uso compartido de información
+              </h2>
+              <p>
+                Kimeru podrá compartir información agregada, estadística o anonimizada con empresas,
+                asociaciones, instituciones, entidades públicas y aliados estratégicos.
+              </p>
+              <p className="mt-3 bg-kimeru-verde-claro/10 border-l-2 border-kimeru-verde-profundo rounded px-4 py-3 text-sm">
+                Esta información se comparte únicamente con fines analíticos o de planeación y no
+                incluye datos personales identificables sin autorización previa del titular.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                7. Derechos de los titulares
+              </h2>
+              <p>Conforme a la {EMPRESA.legal.ley}, los titulares tienen derecho a:</p>
               <ul className="list-disc list-inside mt-3 space-y-2">
-                <li><strong>Acceder</strong> a sus datos personales de forma gratuita</li>
-                <li><strong>Actualizar y rectificar</strong> información inexacta o incompleta</li>
-                <li><strong>Solicitar la supresión</strong> de sus datos cuando no sean necesarios para la finalidad del tratamiento</li>
-                <li><strong>Revocar la autorización</strong> de tratamiento en cualquier momento</li>
-                <li><strong>Presentar quejas</strong> ante la Superintendencia de Industria y Comercio (SIC)</li>
+                <li><strong>Conocer</strong> la información registrada</li>
+                <li><strong>Solicitar actualización o corrección</strong> de datos</li>
+                <li><strong>Solicitar la eliminación</strong> de su información</li>
+                <li><strong>Revocar</strong> la autorización otorgada</li>
+                <li><strong>Solicitar información</strong> sobre el uso de sus datos</li>
               </ul>
               <p className="mt-4">
-                Para ejercer cualquiera de estos derechos, escríbenos a{' '}
+                Las solicitudes pueden realizarse escribiendo a{' '}
                 <a href={`mailto:${EMPRESA.contacto.email}`} className="text-kimeru-naranja underline">
                   {EMPRESA.contacto.email}
+                </a>{' '}
+                o por WhatsApp al{' '}
+                <a
+                  href={`https://wa.me/${EMPRESA.contacto.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-kimeru-naranja underline"
+                >
+                  +57 313 697 6123
                 </a>
-                . Daremos respuesta en un plazo máximo de {EMPRESA.legal.plazoEliminacion}.
+                . Conoce el detalle del proceso en{' '}
+                <a href="/kimeru/eliminar-datos" className="text-kimeru-naranja underline">
+                  Eliminar mis datos
+                </a>
+                .
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                6. Conservación de datos
+                8. Seguridad de la información
               </h2>
               <p>
-                Los datos personales se conservarán durante el tiempo necesario para cumplir con la
-                finalidad para la que fueron recopilados, o mientras el titular mantenga activa su
-                cuenta en la plataforma Kimeru. Transcurrido este período, los datos serán eliminados
-                de forma segura e irreversible.
+                Kimeru adopta medidas razonables de protección para prevenir el acceso no autorizado,
+                la pérdida, alteración o uso indebido de la información. Sin embargo, ningún sistema
+                tecnológico puede garantizar seguridad absoluta.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                7. Transferencia de datos a terceros
+                9. Uso de plataformas de terceros
               </h2>
               <p>
-                {EMPRESA.razonSocial} no vende, alquila ni cede datos personales a terceros sin el
-                consentimiento del titular. Los datos podrán ser compartidos únicamente con proveedores
-                de servicios tecnológicos que actúen como encargados del tratamiento bajo estrictas
-                condiciones de confidencialidad.
+                El chatbot de Kimeru opera a través de WhatsApp, plataforma con políticas y condiciones
+                propias sobre las cuales Kimeru no tiene control directo. El uso del chatbot implica
+                también la aceptación de las condiciones de uso y privacidad de WhatsApp / Meta.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                8. Seguridad
+                10. Conservación de la información
               </h2>
               <p>
-                Implementamos medidas técnicas y organizativas adecuadas para proteger los datos
-                personales contra acceso no autorizado, alteración, divulgación o destrucción accidental.
+                La información será conservada durante el tiempo necesario para cumplir las finalidades
+                descritas, o mientras exista relación activa con el usuario, salvo solicitud de
+                eliminación o disposición legal diferente.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                9. Cambios a esta política
+                11. Cambios en esta política
               </h2>
               <p>
-                Nos reservamos el derecho de actualizar esta política en cualquier momento. Los cambios
-                sustanciales serán comunicados a los titulares a través de los canales registrados en la
-                plataforma.
+                Kimeru podrá actualizar esta política cuando sea necesario. Las versiones actualizadas
+                estarán disponibles a través de los canales oficiales.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                12. Aceptación
+              </h2>
+              <p className="bg-kimeru-verde-claro/10 border-l-2 border-kimeru-verde-profundo rounded px-4 py-3 text-sm">
+                Al interactuar con el chatbot y continuar con el registro, el usuario declara que ha
+                leído esta política y autoriza el tratamiento de sus datos conforme a las condiciones
+                aquí descritas.
               </p>
             </section>
           </div>

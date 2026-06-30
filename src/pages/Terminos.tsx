@@ -35,124 +35,127 @@ export default function Terminos() {
           <div className="space-y-10 text-gray-700 leading-relaxed">
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                1. Aceptación de los términos
+                1. Descripción del servicio
               </h2>
               <p>
-                Al registrarse en la plataforma Kimeru o al utilizar cualquiera de sus servicios,
-                el usuario acepta de forma expresa estos Términos y condiciones, así como la{' '}
+                Kimeru es una plataforma de organización y análisis de información agroproductiva
+                territorial. Su función principal es consolidar datos de productores agrícolas,
+                generar inteligencia territorial agregada y facilitar la articulación entre actores
+                del sistema agroalimentario.
+              </p>
+              <p className="mt-2">
+                El servicio opera principalmente a través de un chatbot en WhatsApp y puede incluir
+                canales adicionales en el futuro.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                2. Aceptación de condiciones
+              </h2>
+              <p>
+                El uso del chatbot implica la aceptación plena de estas condiciones, así como de la{' '}
                 <a href="/kimeru/privacidad" className="text-kimeru-naranja underline">
                   Política de privacidad
                 </a>{' '}
-                de {EMPRESA.razonSocial}.
+                de {EMPRESA.razonSocial}. Si el usuario no está de acuerdo con alguna de ellas, debe
+                abstenerse de usar el servicio.
+              </p>
+              <p className="mt-2">
+                Kimeru se reserva el derecho de modificar estas condiciones en cualquier momento. Los
+                cambios serán comunicados a través de los canales oficiales.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                2. Descripción del servicio
+                3. Compromisos de Kimeru
               </h2>
-              <p>
-                Kimeru es una plataforma digital de información agrícola que opera a través de
-                WhatsApp Business. El servicio provee a pequeños y medianos agricultores colombianos
-                información actualizada sobre precios de mercado, análisis de tendencias y
-                recomendaciones comerciales, con el fin de mejorar sus decisiones de venta.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                3. Registro y acceso
-              </h2>
-              <p>
-                El acceso a Kimeru se realiza a través de WhatsApp mediante el número de teléfono
-                del usuario. El usuario es responsable de mantener la confidencialidad de su cuenta
-                y de todas las actividades que ocurran a través de ella.{' '}
-                {EMPRESA.razonSocial} no se hace responsable por accesos no autorizados derivados
-                de negligencia del usuario.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                4. Uso aceptable
-              </h2>
-              <p>El usuario se compromete a:</p>
               <ul className="list-disc list-inside mt-3 space-y-1">
-                <li>Usar el servicio exclusivamente para fines lícitos y conforme a estos términos</li>
-                <li>No compartir información falsa o engañosa a través de la plataforma</li>
-                <li>No intentar acceder de forma no autorizada a sistemas o datos de la plataforma</li>
-                <li>No usar el servicio para actividades comerciales no autorizadas por {EMPRESA.razonSocial}</li>
+                <li>Mantener el servicio disponible en la medida de lo técnicamente posible</li>
+                <li>Tratar la información del usuario conforme a la política de privacidad</li>
+                <li>No compartir datos personales identificables sin autorización</li>
+                <li>Informar al usuario sobre cambios relevantes en el servicio</li>
+                <li>Responder solicitudes de los titulares en los tiempos establecidos por la ley</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                5. Información y exactitud
+                4. Compromisos del usuario
+              </h2>
+              <ul className="list-disc list-inside mt-3 space-y-1">
+                <li>Proporcionar información veraz y actualizada</li>
+                <li>No usar el servicio para fines distintos a los establecidos</li>
+                <li>No enviar información falsa, engañosa o que perjudique a terceros</li>
+                <li>No intentar vulnerar la seguridad o integridad del sistema</li>
+                <li>Notificar a Kimeru si detecta errores o inconsistencias en su información</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                5. Limitación de responsabilidad
               </h2>
               <p>
-                La información de precios y mercados provista por Kimeru tiene carácter informativo
-                y orientativo. {EMPRESA.razonSocial} realiza esfuerzos razonables para garantizar
-                la exactitud de la información, pero no garantiza que sea completa, actualizada o
-                libre de errores. El usuario debe contrastar la información con otras fuentes antes
-                de tomar decisiones comerciales definitivas.
+                Kimeru no garantiza resultados comerciales derivados del uso de la plataforma. La
+                información proporcionada tiene carácter orientativo y analítico.
+              </p>
+              <p className="mt-2">Kimeru no es responsable por:</p>
+              <ul className="list-disc list-inside mt-3 space-y-1">
+                <li>Decisiones comerciales tomadas por los usuarios basadas en la información del sistema</li>
+                <li>Interrupciones del servicio por causas ajenas a su control (fallas de WhatsApp, internet, fuerza mayor)</li>
+                <li>Inexactitudes derivadas de información incorrecta proporcionada por el propio usuario</li>
+                <li>Pérdidas económicas derivadas del uso o imposibilidad de uso del servicio</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
+                6. Propiedad intelectual
+              </h2>
+              <p>
+                Los algoritmos, metodologías, modelos de análisis, reportes y cualquier producto
+                intelectual generado por Kimeru son propiedad de {EMPRESA.razonSocial}.
+              </p>
+              <p className="mt-2">
+                El usuario conserva la propiedad de sus datos productivos. Al registrarlos en Kimeru,
+                otorga autorización para su uso agregado y anonimizado conforme a la{' '}
+                <a href="/kimeru/privacidad" className="text-kimeru-naranja underline">
+                  Política de privacidad
+                </a>
+                .
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                6. Limitación de responsabilidad
+                7. Suspensión del servicio
               </h2>
-              <p>
-                {EMPRESA.razonSocial} no será responsable por pérdidas económicas, lucro cesante o
-                daños directos o indirectos derivados del uso o la imposibilidad de uso del servicio
-                Kimeru, ni por decisiones comerciales tomadas con base en la información provista por
-                la plataforma.
-              </p>
+              <p>Kimeru podrá suspender el acceso de un usuario sin previo aviso en caso de:</p>
+              <ul className="list-disc list-inside mt-3 space-y-1">
+                <li>Uso indebido o fraudulento del servicio</li>
+                <li>Envío de información deliberadamente falsa</li>
+                <li>Conductas que afecten la integridad del sistema o de otros usuarios</li>
+              </ul>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                7. Propiedad intelectual
+                8. Ley aplicable
               </h2>
               <p>
-                Todos los contenidos, marcas, logos, algoritmos y desarrollos tecnológicos de la
-                plataforma Kimeru son propiedad exclusiva de {EMPRESA.razonSocial}. El usuario no
-                adquiere ningún derecho sobre ellos por el uso del servicio.
+                Estas condiciones se rigen por las leyes de la República de{' '}
+                {EMPRESA.legal.jurisdiccion}. Cualquier controversia será resuelta conforme a la
+                legislación colombiana vigente, incluyendo la Ley 1480 de 2011 (Estatuto del
+                Consumidor) y la {EMPRESA.legal.ley} (Protección de Datos Personales).
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                8. Modificaciones del servicio
-              </h2>
-              <p>
-                {EMPRESA.razonSocial} se reserva el derecho de modificar, suspender o discontinuar
-                el servicio Kimeru en cualquier momento. Nos esforzaremos por comunicar cambios
-                importantes con anticipación razonable.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                9. Ley aplicable y jurisdicción
-              </h2>
-              <p>
-                Estos términos se rigen por la legislación de la República de{' '}
-                {EMPRESA.legal.jurisdiccion}. Cualquier controversia derivada de su interpretación
-                o aplicación será resuelta por los tribunales competentes de{' '}
-                {EMPRESA.legal.jurisdiccion}, con renuncia expresa a cualquier otro fuero.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-bold text-kimeru-verde-profundo mb-3">
-                10. Contacto
-              </h2>
-              <p>
-                Para consultas sobre estos términos, escríbenos a{' '}
+              <p className="mt-3">
+                Contacto:{' '}
                 <a href={`mailto:${EMPRESA.contacto.email}`} className="text-kimeru-naranja underline">
                   {EMPRESA.contacto.email}
-                </a>.
+                </a>{' '}
+                · Medellín, Colombia
               </p>
             </section>
           </div>

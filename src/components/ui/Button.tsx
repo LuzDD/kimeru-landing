@@ -6,6 +6,8 @@ interface ButtonProps {
   variant?:  'primary' | 'secondary' | 'outline'
   onClick?:  () => void
   href?:     string
+  target?:   string
+  rel?:      string
   className?: string
   type?:     'button' | 'submit'
 }
@@ -15,6 +17,8 @@ export default function Button({
   variant = 'primary',
   onClick,
   href,
+  target,
+  rel,
   className = '',
   type = 'button',
 }: ButtonProps) {
@@ -32,6 +36,8 @@ export default function Button({
     return (
       <motion.a
         href={href}
+        target={target}
+        rel={rel}
         className={classes}
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
