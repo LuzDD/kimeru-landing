@@ -21,7 +21,7 @@ export default function Logros() {
   const { ref, animate } = useScrollAnimation()
 
   return (
-    <section id="logros" className="relative py-24 px-6 bg-kimeru-verde-profundo overflow-visible">
+    <section id="logros" className="relative py-16 md:py-24 px-6 bg-kimeru-verde-profundo overflow-visible">
       <div className="max-w-6xl mx-auto">
         <motion.div ref={ref} variants={stagger} initial="hidden" animate={animate}>
           <motion.div variants={fadeUp} className="text-center mb-16">
@@ -33,14 +33,14 @@ export default function Logros() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {LOGROS.map(logro => (
               <motion.div
                 key={logro.etiqueta}
                 variants={fadeUp}
-                className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/5"
+                className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/5"
               >
-                <p className="text-4xl md:text-5xl font-bold text-kimeru-naranja mb-2">
+                <p className="text-3xl md:text-5xl font-bold text-kimeru-naranja mb-2">
                   <AnimatedCounter value={logro.valor} suffix={logro.sufijo} />
                 </p>
                 <p className="text-white/60 text-sm leading-tight">{logro.etiqueta}</p>

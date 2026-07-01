@@ -2,14 +2,15 @@ import { motion } from 'framer-motion'
 import type { ReactNode } from 'react'
 
 interface ButtonProps {
-  children:  ReactNode
-  variant?:  'primary' | 'secondary' | 'outline'
-  onClick?:  () => void
-  href?:     string
-  target?:   string
-  rel?:      string
+  children:   ReactNode
+  variant?:   'primary' | 'secondary' | 'outline'
+  onClick?:   () => void
+  href?:      string
+  target?:    string
+  rel?:       string
   className?: string
-  type?:     'button' | 'submit'
+  type?:      'button' | 'submit'
+  disabled?:  boolean
 }
 
 export default function Button({
@@ -21,8 +22,9 @@ export default function Button({
   rel,
   className = '',
   type = 'button',
+  disabled = false,
 }: ButtonProps) {
-  const base = 'inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm transition-colors duration-200 cursor-pointer'
+  const base = 'inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed'
 
   const variants = {
     primary:   'bg-kimeru-naranja text-white hover:bg-orange-600',
@@ -51,9 +53,10 @@ export default function Button({
     <motion.button
       type={type}
       onClick={onClick}
+      disabled={disabled}
       className={classes}
-      whileHover={{ scale: 1.03 }}
-      whileTap={{ scale: 0.97 }}
+      whileHover={disabled ? {} : { scale: 1.03 }}
+      whileTap={disabled ? {} : { scale: 0.97 }}
     >
       {children}
     </motion.button>

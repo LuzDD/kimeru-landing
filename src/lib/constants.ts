@@ -4,7 +4,7 @@ export const EMPRESA = {
   dominio:     'atlasintelligencesas.com',
   basePath:    '/kimeru',
   contacto: {
-    email:    'kimeruagro@gmail.com',
+    email:    'luzmiduradori@gmail.com',
     whatsapp: '573136976123',
   },
   redes: {

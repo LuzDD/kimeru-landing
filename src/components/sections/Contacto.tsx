@@ -5,30 +5,48 @@ import { useScrollAnimation, fadeUp, stagger } from '../../hooks/useScrollAnimat
 import { EMPRESA } from '../../lib/constants'
 import Button from '../ui/Button'
 
+const WEB3FORMS_KEY = '4c7272ae-c1c3-47a0-8bd8-bedc4f51c7f5'
+
 export default function Contacto() {
   const { ref, animate } = useScrollAnimation()
-  const [form, setForm] = useState({ nombre: '', correo: '', mensaje: '' })
+  const [form, setForm]       = useState({ nombre: '', correo: '', mensaje: '' })
+  const [status, setStatus]   = useState<'idle' | 'loading' | 'ok' | 'error'>('idle')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`Contacto Kimeru — ${form.nombre}`)
-    const body    = encodeURIComponent(`Nombre: ${form.nombre}\nCorreo: ${form.correo}\n\n${form.mensaje}`)
-    window.location.href = `mailto:${EMPRESA.contacto.email}?subject=${subject}&body=${body}`
+    setStatus('loading')
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject:    `Contacto Kimeru — ${form.nombre}`,
+          name:       form.nombre,
+          email:      form.correo,
+          message:    form.mensaje,
+        }),
+      })
+      const data = await res.json()
+      setStatus(data.success ? 'ok' : 'error')
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
-    <section id="contacto" className="py-24 px-6 bg-white">
+    <section id="contacto" className="py-16 md:py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
           variants={stagger}
           initial="hidden"
           animate={animate}
-          className="grid md:grid-cols-2 gap-16 items-start"
+          className="grid md:grid-cols-2 gap-10 md:gap-16 items-start"
         >
           {/* Info */}
           <div>
@@ -44,7 +62,7 @@ export default function Contacto() {
             </motion.p>
 
             {EMPRESA.redes.whatsappCanal && (
-              <motion.div variants={fadeUp} className="mb-6">
+              <motion.div variants={fadeUp} className="mb-3">
                 <Button
                   href={EMPRESA.redes.whatsappCanal}
                   target="_blank"
@@ -56,6 +74,18 @@ export default function Contacto() {
                 </Button>
               </motion.div>
             )}
+
+            <motion.div variants={fadeUp} className="mb-6">
+              <Button
+                href={`https://wa.me/${EMPRESA.contacto.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="secondary"
+              >
+                <MessageCircle size={18} />
+                Escríbenos para dudas
+              </Button>
+            </motion.div>
 
             <motion.div variants={fadeUp} className="flex items-center gap-2 text-gray-400 text-sm">
               <Mail size={15} />
@@ -109,8 +139,18 @@ export default function Contacto() {
                 className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-kimeru-verde-profundo resize-none"
               />
             </div>
-            <Button type="submit" variant="primary">
-              Enviar mensaje
+            {status === 'ok' && (
+              <p className="text-green-700 bg-green-50 border border-green-200 rounded-lg px-4 py-3 text-sm">
+                ¡Mensaje enviado! Te respondemos pronto.
+              </p>
+            )}
+            {status === 'error' && (
+              <p className="text-red-700 bg-red-50 border border-red-200 rounded-lg px-4 py-3 text-sm">
+                Hubo un error al enviar. Intenta de nuevo o escríbenos directamente al correo.
+              </p>
+            )}
+            <Button type="submit" variant="primary" disabled={status === 'loading' || status === 'ok'}>
+              {status === 'loading' ? 'Enviando…' : 'Enviar mensaje'}
             </Button>
           </motion.form>
         </motion.div>

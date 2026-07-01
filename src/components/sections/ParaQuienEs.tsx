@@ -17,7 +17,7 @@ export default function ParaQuienEs() {
   return (
     <section
       id="para-quien-es"
-      className="relative py-24 px-6 bg-cover bg-center"
+      className="relative py-16 md:py-24 px-6 bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="relative max-w-6xl mx-auto">
@@ -38,7 +38,7 @@ export default function ParaQuienEs() {
               <motion.div
                 key={segmento.titulo}
                 variants={fadeUp}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
+                className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100"
               >
                 <div className="w-14 h-14 bg-kimeru-verde-profundo rounded-xl flex items-center justify-center text-kimeru-verde-claro mb-5">
                   {iconMap[segmento.icono]}

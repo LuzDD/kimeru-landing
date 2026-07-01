@@ -6,22 +6,36 @@ import Footer from '../components/layout/Footer'
 import { EMPRESA } from '../lib/constants'
 import Button from '../components/ui/Button'
 
+const WEB3FORMS_KEY = '4c7272ae-c1c3-47a0-8bd8-bedc4f51c7f5'
+
 export default function EliminarDatos() {
-  const [form, setForm]       = useState({ nombre: '', telefono: '', correo: '' })
-  const [enviado, setEnviado] = useState(false)
+  const [form, setForm]     = useState({ nombre: '', telefono: '', correo: '' })
+  const [status, setStatus] = useState<'idle' | 'loading' | 'ok' | 'error'>('idle')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const subject = encodeURIComponent('Solicitud de eliminación de datos — Kimeru')
-    const body    = encodeURIComponent(
-      `Solicito la eliminación de mis datos personales de la plataforma Kimeru.\n\nNombre: ${form.nombre}\nTeléfono WhatsApp: ${form.telefono}\nCorreo: ${form.correo}\n\nConfirmo que soy el titular de los datos y solicito su eliminación permanente conforme a la ${EMPRESA.legal.ley}.`
-    )
-    window.location.href = `mailto:${EMPRESA.contacto.email}?subject=${subject}&body=${body}`
-    setEnviado(true)
+    setStatus('loading')
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject:    'Solicitud de eliminación de datos — Kimeru',
+          name:       form.nombre,
+          email:      form.correo || 'no-email@kimeru.co',
+          message:    `Solicito la eliminación de mis datos personales de la plataforma Kimeru.\n\nNombre: ${form.nombre}\nTeléfono WhatsApp: ${form.telefono}\nCorreo: ${form.correo}\n\nConfirmo que soy el titular de los datos y solicito su eliminación permanente conforme a la ${EMPRESA.legal.ley}.`,
+        }),
+      })
+      const data = await res.json()
+      setStatus(data.success ? 'ok' : 'error')
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
@@ -136,7 +150,15 @@ export default function EliminarDatos() {
           </div>
 
           {/* Formulario */}
-          {!enviado ? (
+          {status === 'ok' ? (
+            <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
+              <p className="text-green-800 font-semibold text-lg mb-2">Solicitud enviada</p>
+              <p className="text-green-700 text-sm">
+                Recibimos tu solicitud. Recibirás confirmación en máximo{' '}
+                {EMPRESA.legal.plazoEliminacion}.
+              </p>
+            </div>
+          ) : (
             <form
               onSubmit={handleSubmit}
               className="bg-gray-50 rounded-2xl p-8 flex flex-col gap-5 border border-gray-100"
@@ -188,19 +210,16 @@ export default function EliminarDatos() {
                 />
               </div>
 
-              <Button type="submit" variant="primary">
-                Enviar solicitud de eliminación
+              {status === 'error' && (
+                <p className="text-red-700 bg-red-50 border border-red-200 rounded-lg px-4 py-3 text-sm">
+                  Hubo un error al enviar. Intenta de nuevo o contáctanos directamente.
+                </p>
+              )}
+
+              <Button type="submit" variant="primary" disabled={status === 'loading'}>
+                {status === 'loading' ? 'Enviando…' : 'Enviar solicitud de eliminación'}
               </Button>
             </form>
-          ) : (
-            <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
-              <p className="text-green-800 font-semibold text-lg mb-2">Solicitud preparada</p>
-              <p className="text-green-700 text-sm">
-                Se abrió tu cliente de correo con la solicitud prellenada. Envía el correo para
-                completar el proceso. Recibirás confirmación en máximo{' '}
-                {EMPRESA.legal.plazoEliminacion}.
-              </p>
-            </div>
           )}
         </div>
       </motion.main>

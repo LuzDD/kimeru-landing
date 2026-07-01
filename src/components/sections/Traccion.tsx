@@ -7,7 +7,7 @@ export default function Traccion() {
   const { ref, animate } = useScrollAnimation()
 
   return (
-    <section id="traccion" className="py-24 px-6 bg-white">
+    <section id="traccion" className="py-16 md:py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div ref={ref} variants={stagger} initial="hidden" animate={animate}>
           <motion.div variants={fadeUp} className="text-center mb-4">
@@ -26,14 +26,14 @@ export default function Traccion() {
             modelo funciona en territorio real.
           </motion.p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {TRACCION.metricas.map(metrica => (
               <motion.div
                 key={metrica.etiqueta}
                 variants={fadeUp}
-                className="text-center bg-gray-50 rounded-2xl p-6 border border-gray-100"
+                className="text-center bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-100"
               >
-                <p className="text-4xl md:text-5xl font-bold text-kimeru-verde-profundo mb-2">
+                <p className="text-3xl md:text-5xl font-bold text-kimeru-verde-profundo mb-2">
                   <AnimatedCounter value={metrica.valor} suffix={metrica.sufijo} />
                 </p>
                 <p className="text-gray-500 text-sm leading-tight">{metrica.etiqueta}</p>

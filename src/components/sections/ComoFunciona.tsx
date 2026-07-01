@@ -14,7 +14,7 @@ export default function ComoFunciona() {
   const { ref, animate } = useScrollAnimation()
 
   return (
-    <section id="como-funciona" className="py-24 px-6 bg-kimeru-verde-profundo">
+    <section id="como-funciona" className="py-16 md:py-24 px-6 bg-kimeru-verde-profundo">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -36,7 +36,7 @@ export default function ComoFunciona() {
               <motion.div
                 key={paso.numero}
                 variants={fadeUp}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center"
+                className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 text-center"
               >
                 <div className="w-14 h-14 bg-kimeru-verde-profundo rounded-xl flex items-center justify-center text-kimeru-verde-claro mx-auto mb-5">
                   {iconMap[paso.icono]}

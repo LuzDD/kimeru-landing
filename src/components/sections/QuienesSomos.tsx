@@ -7,14 +7,14 @@ export default function QuienesSomos() {
   const { ref, animate } = useScrollAnimation()
 
   return (
-    <section id="quienes-somos" className="py-24 px-6 bg-white">
+    <section id="quienes-somos" className="py-16 md:py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
           variants={stagger}
           initial="hidden"
           animate={animate}
-          className="grid md:grid-cols-2 gap-16 items-center"
+          className="grid md:grid-cols-2 gap-10 md:gap-16 items-center"
         >
           {/* Texto */}
           <div>
