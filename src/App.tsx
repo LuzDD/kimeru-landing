@@ -28,7 +28,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: import.meta.env.DEV ? '/' : '/kimeru' },
+  { basename: '/' },
 )
 
 export default function App() {
