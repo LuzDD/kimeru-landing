@@ -4,7 +4,7 @@ export const EMPRESA = {
   dominio:     'atlasintelligencesas.com',
   basePath:    '/kimeru',
   contacto: {
-    email:    'luzmiduradori@gmail.com',
+    email:    'kimeruagro@gmail.com',
     whatsapp: '573136976123',
   },
   redes: {
@@ -13,12 +13,12 @@ export const EMPRESA = {
     whatsappCanal:  'https://whatsapp.com/channel/0029VbBtTD0GE56lE4TVkQ0a',
   },
   urls: {
-    base:          'https://atlasintelligencesas.com/kimeru',
-    privacidad:    'https://atlasintelligencesas.com/kimeru/privacidad',
-    terminos:      'https://atlasintelligencesas.com/kimeru/terminos',
-    eliminarDatos: 'https://atlasintelligencesas.com/kimeru/eliminar-datos',
-    ogImage:       'https://atlasintelligencesas.com/kimeru/og-image.png',
-    logo:          'https://atlasintelligencesas.com/kimeru/logo-kimeru.png',
+    base:          'https://kimeru.co',
+    privacidad:    'https://kimeru.co/privacidad',
+    terminos:      'https://kimeru.co/terminos',
+    eliminarDatos: 'https://kimeru.co/eliminar-datos',
+    ogImage:       'https://kimeru.co/og-image.png',
+    logo:          'https://kimeru.co/logo-kimeru.png',
   },
   legal: {
     ley:                  'Ley 1581 de 2012',

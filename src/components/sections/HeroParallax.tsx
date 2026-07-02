@@ -148,9 +148,9 @@ export default function HeroParallax() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button href="#" variant="primary" className="text-base px-8 py-4">
+            {/* <Button href="#" variant="primary" className="text-base px-8 py-4">
               Prueba nuestra solución
-            </Button>
+            </Button> */}
             <Button
               href="#quienes-somos"
               variant="outline"
